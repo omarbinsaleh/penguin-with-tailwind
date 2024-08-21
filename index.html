@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Penguin Fashion with Tailwind CSS</title>
+   <!-- Bebas Neue Font CDN -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+   <!-- roboto font CDN -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+   <!-- font awesome icon CDN -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <!-- tailwind CDN -->
+   <script src="https://cdn.tailwindcss.com"></script>
+
+   <style>
+      .font-bebas-neue {
+         font-family: "Bebas Neue", sans-serif;
+      }
+
+      .font-roboto {
+         font-family: "Roboto", sans-serif;
+      }
+   </style>
+</head>
+
+<body class="font-roboto">
+   <!-- header section -->
+   <header class="bg-[#FFFBF0] p-3 pb-7">
+      <nav>
+
+      </nav>
+      <!-- banner -->
+       <div class="md:flex gap-4">
+         <div class="flex flex-col gap-5 items-start justify-center flex-1">
+            <h1 class="font-bebas-neue uppercase text-5xl md:text-6xl lg:text-7xl font-bold text-stone-800">
+               <span class="text-orange-400">Be the Penguin</span> <br> of Winder
+            </h1>
+            <p>
+               Discover the latest trends in fashion at Penguin Fashion. Elevate your style with our curated collection of chic, contemporary clothing and accessories. Shop now for exclusive looks!
+            </p>
+            <button class="bg-gradient-to-r from-[#A4BC46] to-[#85A019] text-white px-6 py-4 rounded-md flex gap-2 items-center uppercase font-semibold text-lg">
+               <i class="fa-solid fa-cart-shopping uppercase"></i> Buy Now
+            </button>
+         </div>
+         <div class="flex-1 flex justify-center items-center">
+            <img src="./images/model.png" alt="">
+         </div>
+       </div>
+   </header>
+
+   <!-- main section -->
+   <main></main>
+
+   <!-- footer section -->
+   <footer></footer>
+</body>
+
+</html>
