@@ -12,9 +12,13 @@
    <!-- roboto font CDN -->
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+   <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet">
    <!-- font awesome icon CDN -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
    <!-- tailwind CDN -->
    <script src="https://cdn.tailwindcss.com"></script>
 
@@ -26,6 +30,25 @@
       .font-roboto {
          font-family: "Roboto", sans-serif;
       }
+
+      .text-collaps-2 {
+         overflow: hidden;
+         display: -webkit-box;
+         -webkit-box-orient: vertical;
+         -webkit-line-clamp: 2;
+      }
+
+      .text-collaps-4 {
+         overflow: hidden;
+         display: -webkit-box;
+         -webkit-box-orient: vertical;
+         -webkit-line-clamp: 4;
+      }
+
+      .text-collaps-4:hover {
+         -webkit-line-clamp: unset;
+      }
+
    </style>
 </head>
 
@@ -36,42 +59,119 @@
       <nav class="max-w-screen-xl mx-auto md:flex md:justify-between items-center">
          <!-- nav header -->
          <div class="nav-header flex justify-between items-center">
-            <img class="w-6/12 md:w-[300px] h-9 md:h-12" src="./icons/logo.png" alt="logo">
+            <img class="w-5/12 md:w-[300px] h-9 md:h-12" src="./icons/logo.png" alt="logo">
             <div class="sidebar-btn md:hidden text-xl">
                <i class="fa-solid fa-bars"></i>
             </div>
          </div>
          <!-- nav links -->
-          <ul class="hidden md:flex gap-4 lg:gap-6 font-bold text-base">
+         <ul class="hidden md:flex gap-4 lg:gap-6 font-bold text-base">
             <li>Home</li>
             <li>Products</li>
             <li>About us</li>
             <li>Contact us</li>
-          </ul>
+         </ul>
       </nav>
 
       <!-- banner -->
-       <div class="md:flex gap-4 max-w-screen-xl mx-auto">
+      <div class="md:flex gap-4 max-w-screen-xl mx-auto">
          <div class="flex flex-col gap-5 items-start justify-center flex-1">
             <h1 class="font-bebas-neue uppercase text-5xl md:text-6xl lg:text-7xl font-bold text-stone-800">
                <span class="text-orange-400">Be the Penguin</span> <br> of Winder
             </h1>
             <p>
-               Discover the latest trends in fashion at Penguin Fashion. Elevate your style with our curated collection of chic, contemporary clothing and accessories. Shop now for exclusive looks!
+               Discover the latest trends in fashion at Penguin Fashion. Elevate your style with our curated collection
+               of chic, contemporary clothing and accessories. Shop now for exclusive looks!
             </p>
-            <button class="bg-gradient-to-r from-[#A4BC46] to-[#85A019] text-white px-6 py-4 rounded-md flex gap-2 items-center uppercase font-semibold text-lg">
+            <button
+               class="bg-gradient-to-r from-[#A4BC46] to-[#85A019] text-white px-6 py-4 rounded-md flex gap-2 items-center uppercase font-semibold text-lg">
                <i class="fa-solid fa-cart-shopping uppercase"></i> Buy Now
             </button>
          </div>
          <div class="flex-1 flex justify-center items-center">
             <img src="./images/model.png" alt="">
          </div>
-       </div>
+      </div>
    </header>
 
    <!-- main section -->
-   <main>
-      
+   <main class="p-3">
+      <!-- women jacket section -->
+      <section class="max-w-screen-xl mx-auto space-y-4">
+         <!-- section title -->
+         <h1 class="text-2xl font-bold uppercase text-stone-800">
+            women jacket
+         </h1>
+         <!-- cards container -->
+         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5 overflow-auto max-h-[650px] md:max-h-[700px]">
+            <!-- card 1 -->
+            <div class="max-w-96 mx-auto rounded-xl shadow-xl p-4 py-5 space-y-5 border border-stone-200">
+               <img class="aspect-[1/1] p-14 bg-stone-300 rounded-xl" src="./images/jacket-1.png"
+                  alt="yellow jacket for women">
+               <div>
+                  <h2 class="text-lg capitalize font-semibold text-stone-800">
+                     yellow coat jacket
+                  </h2>
+                  <p class="text-collaps-2">
+                     Brighten your wardrobe with our chic yellow women's jacket. Perfect for any season, its sleek
+                     design combines vibrant color with sophisticated style, offering both warmth and a pop of
+                     confidence.
+                  </p>
+               </div>
+               <div class="flex items-center justify-between">
+                  <h1 class="text-4xl font-bold text-orange-400">$234</h1>
+                  <button
+                     class="bg-gradient-to-r from-[#A4BC46] to-[#85A019] text-white px-6 py-4 rounded-md flex gap-2 items-center uppercase font-semibold text-lg">
+                     <i class="fa-solid fa-cart-shopping uppercase"></i> Buy Now
+                  </button>
+               </div>
+            </div>
+            <!-- card 2 -->
+            <div class="max-w-96 mx-auto rounded-xl shadow-xl p-4 py-5 space-y-5 border border-stone-300">
+               <img class="aspect-[1/1] p-14 bg-stone-300 rounded-xl" src="./images/jacket-1.png"
+                  alt="yellow jacket for women">
+               <div>
+                  <h2 class="text-lg capitalize font-semibold text-stone-800">
+                     yellow coat jacket
+                  </h2>
+                  <p class="text-collaps-2">
+                     Brighten your wardrobe with our chic yellow women's jacket. Perfect for any season, its sleek
+                     design combines vibrant color with sophisticated style, offering both warmth and a pop of
+                     confidence.
+                  </p>
+               </div>
+               <div class="flex items-center justify-between">
+                  <h1 class="text-4xl font-bold text-orange-400">$234</h1>
+                  <button
+                     class="bg-gradient-to-r from-[#A4BC46] to-[#85A019] text-white px-6 py-4 rounded-md flex gap-2 items-center uppercase font-semibold text-lg">
+                     <i class="fa-solid fa-cart-shopping uppercase"></i> Buy Now
+                  </button>
+               </div>
+            </div>
+            <!-- card 3 -->
+            <div class="max-w-96 mx-auto rounded-xl shadow-xl p-4 py-5 space-y-5 border border-stone-300">
+               <img class="aspect-[1/1] p-14 bg-stone-300 rounded-xl" src="./images/jacket-1.png"
+                  alt="yellow jacket for women">
+               <div>
+                  <h2 class="text-lg capitalize font-semibold text-stone-800">
+                     yellow coat jacket
+                  </h2>
+                  <p class="text-collaps-2">
+                     Brighten your wardrobe with our chic yellow women's jacket. Perfect for any season, its sleek
+                     design combines vibrant color with sophisticated style, offering both warmth and a pop of
+                     confidence.
+                  </p>
+               </div>
+               <div class="flex items-center justify-between">
+                  <h1 class="text-4xl font-bold text-orange-400">$234</h1>
+                  <button
+                     class="bg-gradient-to-r from-[#A4BC46] to-[#85A019] text-white px-6 py-4 rounded-md flex gap-2 items-center uppercase font-semibold text-lg">
+                     <i class="fa-solid fa-cart-shopping uppercase"></i> Buy Now
+                  </button>
+               </div>
+            </div>
+         </div>
+      </section>
    </main>
 
    <!-- footer section -->
